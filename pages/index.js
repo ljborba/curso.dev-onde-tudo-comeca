@@ -1,10 +1,9 @@
 function Home() {
     return (
         <div>
-            <p>Em breve,<strong>Construção</strong></p>
-            <p>Daqui pra baixo é só pra frente.</p>
+            <p><strong>Construção</strong>, daqui pra baixo é só pra frente.</p>
             <section>
-                <h6>Os assuntos que eu já passei:</h6>
+                <p><strong>Os assuntos que eu já passei:</strong></p>
                 <ul>
                     <li>Git e GitHub</li>
                     <li>Repositório</li>
