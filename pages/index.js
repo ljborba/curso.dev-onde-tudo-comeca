@@ -19,6 +19,7 @@ function Home() {
                     <li>DNS</li>
                     <li>Domínio</li>
                 </ul>
+                <data>16/07/2024</data>
             </section>
         </div>
     )
