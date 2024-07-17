@@ -18,6 +18,8 @@ function Home() {
                     <li>Prettier</li>
                     <li>DNS</li>
                     <li>Domínio</li>
+                    <li>Prova de Conceito(POC)</li>
+                    <li>Produto Viável Mínimo(MVP)</li>
                 </ul>
                 <data>16/07/2024</data>
             </section>
