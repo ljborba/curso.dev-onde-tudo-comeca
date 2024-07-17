@@ -1,7 +1,7 @@
 function Home() {
     return (
         <div>
-            <p><strong>Construção</strong>, daqui pra baixo é só pra frente.</p>
+            <p><strong>Em Construção</strong>, daqui pra baixo é só pra frente.</p>
             <section>
                 <p><strong>Os assuntos que eu já passei:</strong></p>
                 <ul>
@@ -21,7 +21,7 @@ function Home() {
                     <li>Prova de Conceito(POC)</li>
                     <li>Produto Viável Mínimo(MVP)</li>
                 </ul>
-                <data>16/07/2024</data>
+                <data>Atualizado em 16/07/2024</data>
             </section>
         </div>
     )
