@@ -21,6 +21,11 @@ function Home() {
                     <li>Prova de Conceito(POC)</li>
                     <li>Produto Viável Mínimo(MVP)</li>
                 </ul>
+                <p>Livros:</p>
+                <ul>
+                    <li><strong>Lendo</strong> Entendendo Algoritmos: Um Guia Ilustrado Para Programadores e Outros Curiosos Capa comum – 24 abril 2017</li>
+                    <li><strong>Lido</strong> Analise De Sistemas Orientada Ao Sucesso Capa comum – 1 janeiro 2005</li>
+                </ul>
                 <data>Atualizado em 16/07/2024</data>
             </section>
         </div>
