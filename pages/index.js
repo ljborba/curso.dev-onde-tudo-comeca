@@ -20,6 +20,9 @@ function Home() {
                     <li>Domínio</li>
                     <li>Prova de Conceito(POC)</li>
                     <li>Produto Viável Mínimo(MVP)</li>
+                    <li>Overengineering e Underengineering</li>
+                    <li>Arquitetura de Software</li>
+                    <li>Organização de Pastas</li>
                 </ul>
                 <p><strong>Livros:</strong></p>
                 <ul>
