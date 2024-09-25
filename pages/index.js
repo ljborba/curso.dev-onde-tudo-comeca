@@ -28,8 +28,9 @@ function Home() {
                 <ul>
                     <li><strong>Lendo</strong> Entendendo Algoritmos: Um Guia Ilustrado Para Programadores e Outros Curiosos Capa comum – 24 abril 2017</li>
                     <li><strong>Lido</strong> Analise De Sistemas Orientada Ao Sucesso Capa comum – 1 janeiro 2005</li>
+                    <li><strong>Lido</strong> Simplificando teste de software: Compartilhando Experiências Capa comum – 25 julho 2023</li>
                 </ul>
-                <data>Atualizado em 16/07/2024</data>
+                <data>Atualizado em 25/09/2024</data>
             </section>
         </div>
     )
