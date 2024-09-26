@@ -5,6 +5,12 @@ function Home() {
             <section>
                 <p><strong>Os assuntos que eu já passei:</strong></p>
                 <ul>
+                    <li>Scratch</li>
+                    <li>C</li>
+                    <li>Arrays</li>
+                    <li>Algoritmos</li>
+                    <li>Memória</li>
+                    <li>Estrutura de Dados</li>
                     <li>Git e GitHub</li>
                     <li>Repositório</li>
                     <li>Ambiente de Desenvolvimento</li>
