@@ -1,3 +1,5 @@
+import "./styles/index.css";
+
 function Home() {
     return (
         <div>
