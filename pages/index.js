@@ -1,10 +1,8 @@
-import styles from './Home.module.css';
-
 function Home() {
     return (
-        <div className={styles.container}>
+        <div>
             <p><strong>Em Construção</strong>, daqui pra baixo é só pra frente.</p>
-            <section className={styles.section}>
+            <section>
                 <p><strong>Os assuntos que eu já passei:</strong></p>
                 <ul>
                     <li>Scratch</li>
@@ -26,8 +24,8 @@ function Home() {
                     <li>Prettier</li>
                     <li>DNS</li>
                     <li>Domínio</li>
-                    <li>Prova de Conceito (POC)</li>
-                    <li>Produto Viável Mínimo (MVP)</li>
+                    <li>Prova de Conceito(POC)</li>
+                    <li>Produto Viável Mínimo(MVP)</li>
                     <li>Overengineering e Underengineering</li>
                     <li>Arquitetura de Software</li>
                     <li>Organização de Pastas</li>
