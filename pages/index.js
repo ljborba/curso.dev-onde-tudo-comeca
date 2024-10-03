@@ -1,6 +1,6 @@
 function Home() {
     return (
-        <div>
+        <div style={{backgroundColor:"black", color:"white"}}>
             <p><strong>Em Construção</strong>, daqui pra baixo é só pra frente.</p>
             <section>
                 <p><strong>Os assuntos que eu já passei:</strong></p>
