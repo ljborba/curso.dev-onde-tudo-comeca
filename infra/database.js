@@ -1,3 +1,4 @@
+import db from "node-pg-migrate/dist/db";
 import { Client } from "pg";
 
 async function query(queryObject) {
@@ -27,5 +28,5 @@ export default {
 };
 
 function getSSLValues() {
-  return process.env.NODE_ENV === "development" ? false : true;
+  return process.env.NODE_ENV === "production" ? true : false;
 }
