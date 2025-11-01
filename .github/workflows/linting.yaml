@@ -3,7 +3,7 @@ name: Linting
 on: pull_request
 
 jobs:
-  prettier:
+  lint:
     name: Prettier
     runs-on: ubuntu-latest
     steps:
@@ -12,7 +12,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: lts/hydrogen
+          cache: "npm"
 
+      - name: Instala deps
       - run: npm ci
 
+      - name: Prettier check
       - run: npm run lint:prettier:check
+
+      - name: ESLint check
+      - run: npm run lint:eslint
