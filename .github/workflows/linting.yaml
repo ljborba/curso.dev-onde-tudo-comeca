@@ -17,6 +17,5 @@ jobs:
       - name: Instala deps
       - run: npm ci
 
+      - name: Prettier check
       - run: npm run lint:prettier:check
-
-      - run: npm run lint:eslint
