@@ -1,4 +1,3 @@
-import db from "node-pg-migrate/dist/db";
 import { Client } from "pg";
 
 async function query(queryObject) {
@@ -28,10 +27,12 @@ async function getNewClient() {
   return client;
 }
 
-export default {
+const database = {
   query,
   getNewClient,
 };
+
+export default database;
 
 function getSSLValues() {
   if (process.env.POSTGRES_CA) {
