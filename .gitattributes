@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Hooks e scripts sempre com LF
+.husky/** text eol=lf
+*.sh      text eol=lf
