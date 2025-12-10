@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+set -e
+
+# garante que o hook sempre roda na raiz do repo
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+cd "$REPO_ROOT"
+
+echo "[husky] Rodando lint-staged (secretlint nos arquivos staged)..."
+npx --no -- lint-staged
