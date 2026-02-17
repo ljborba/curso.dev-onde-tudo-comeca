@@ -11,9 +11,7 @@ export default function statusPage() {
     <>
       <h1>status</h1>
       <UpdatedAt />
-      <DataBaseVersion />
-      <MaxConnections />
-      <ConexoesAbertas />
+      <DatabaseStatus />
     </>
   );
 }
@@ -31,43 +29,38 @@ function UpdatedAt() {
   return <div>Última atualização: {updatedAtText}</div>;
 }
 
-function DataBaseVersion() {
-  const { isLoading, data } = useSWR("/api/v1/status", fetchAPI);
+function DatabaseStatus() {
+  const { isLoading, data } = useSWR("/api/v1/status", fetchAPI, {
+    refreshInterval: 2000,
+  });
 
-  let dataBaseVersionText = "Carregando...";
-
-  if (!isLoading && data) {
-    dataBaseVersionText =
-      data.dependencies?.database?.version || data.database?.version;
-  }
-
-  return <div>Versão do Banco de Dados: {dataBaseVersionText}</div>;
-}
-
-function MaxConnections() {
-  const { isLoading, data } = useSWR("/api/v1/status", fetchAPI);
-
-  let maxConnectionsText = "Carregando...";
+  let databaseStatusInformation = "Carregando...";
 
   if (!isLoading && data) {
-    maxConnectionsText =
-      data.dependencies?.database?.max_connections ||
-      data.database?.max_connections;
+    databaseStatusInformation = (
+      <>
+        <div>
+          Versão:{" "}
+          {data.dependencies?.database?.version || data.database?.version}
+        </div>
+        <div>
+          Conexões abertas:{" "}
+          {data.dependencies?.database?.opened_connections ||
+            data.database?.opened_connections}
+        </div>
+        <div>
+          Conexões máximas:{" "}
+          {data.dependencies?.database?.max_connections ||
+            data.database?.max_connections}
+        </div>
+      </>
+    );
+
+    return (
+      <>
+        <h2>Database</h2>
+        <div>{databaseStatusInformation}</div>
+      </>
+    );
   }
-
-  return <div>Máximas conexões com Banco: {maxConnectionsText}</div>;
-}
-
-function ConexoesAbertas() {
-  const { isLoading, data } = useSWR("/api/v1/status", fetchAPI);
-
-  let conexoesAbertasText = "Carregando...";
-
-  if (!isLoading && data) {
-    conexoesAbertasText =
-      data.dependencies?.database?.opened_connections ||
-      data.database?.opened_connections;
-  }
-
-  return <div>Conexões abertas com Banco: {conexoesAbertasText}</div>;
 }
